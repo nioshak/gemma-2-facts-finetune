@@ -1,0 +1,12 @@
+torch
+transformers
+peft
+trl
+bitsandbytes
+accelerate
+huggingface_hub
+datasets
+google-generativeai
+pandas
+tqdm
+python-dotenv
