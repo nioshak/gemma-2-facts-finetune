@@ -56,9 +56,9 @@ The training pipeline was optimized for widely available T4 GPUs (Google Colab F
 ---
 
 ## Usage
-The trained adapter is available on Hugging Face: `[YOUR_HUGGINGFACE_USERNAME]/gemma-facts-finetune`
+The trained adapter is available on Hugging Face: `kayhani/gemma-facts-finetune`
 
 ```python
 from transformers import pipeline
-pipe = pipeline("text-generation", model="[YOUR_USERNAME]/gemma-facts-finetune")
+pipe = pipeline("text-generation", model="kayhani/gemma-facts-finetune")
 # See repo for full inference script
