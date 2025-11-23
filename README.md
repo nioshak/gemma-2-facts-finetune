@@ -49,7 +49,7 @@ The training pipeline was optimized for widely available T4 GPUs (Google Colab F
 ---
 
 ## Program Retrospective
-* **Trade-offs:** We accepted higher inference latency (due to de-quantization steps) in exchange for significantly lower training costs. For a real-time production SLA, I would recommend serving the model in FP16 on L4 GPUs.
+* **Trade-offs:** I accepted higher inference latency (due to de-quantization steps) in exchange for significantly lower training costs. For a real-time production SLA, I would recommend serving the model in FP16 on L4 GPUs.
 * **Scalability:** The synthetic data pipeline is decoupled from the training loop, allowing us to scale to 10k+ examples simply by swapping the input corpus (e.g., Wikipedia).
 * **Next Steps:** Evaluate performance on "Gemma 2 9B" to test if reasoning capabilities improve with model size while maintaining the same safety alignment.
 
